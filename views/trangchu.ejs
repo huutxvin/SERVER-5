@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NJS</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+<!--<script>
+	    var socket = io('http://localhost:4000');
+		socket.on('server-send-mau',function(data){
+			console.log(data);
+            $('#txtfield').val(data);			
+		});
+		$(document).ready(function(){
+			$('#red').click(function(){
+				var redClicked = 'red' + " " + $('#txtfield').val();
+               socket.emit('client-send-mau',redClicked);
+			});
+            $('#green').click(function(){
+            	var greenClicked = 'green' + " " + $('#txtfield').val();
+               socket.emit('client-send-mau',greenClicked);
+			});
+		});
+	</script> -->
+</head>
+<body bgcolor="pink">
+	<div class="container">
+		<div class="numb">
+			<span>Your Number</span>
+			<input type="text" class="txtfield" id="txtfield">
+		</div>
+		<div class="color">
+			<input type="submit" id="red" value="Send">
+			<input type="submit" id="green" value="Send">
+		</div>
+	</div>
+</body>
+</html>
